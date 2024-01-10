@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paralaksa</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .parallax-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parallax-item {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        #item1 {
+            background-color: rgba(255, 0, 0, 0.6);
+        }
+
+        #item2 {
+            background-color: rgba(0, 255, 0, 0.6);
+        }
+
+        #item3 {
+            background-color: rgba(0, 0, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-container" id="parallaxContainer">
+        <div class="parallax-item" id="item1"></div>
+        <div class="parallax-item" id="item2"></div>
+        <div class="parallax-item" id="item3"></div>
+    </div>
+
+    <script>
+        const parallaxContainer = document.getElementById('parallaxContainer');
+        const item1 = document.getElementById('item1');
+        const item2 = document.getElementById('item2');
+        const item3 = document.getElementById('item3');
+
+        parallaxContainer.addEventListener('mousemove', function (e) {
+            const x = e.clientX / window.innerWidth - 0.5;
+            const y = e.clientY / window.innerHeight - 0.5;
+
+            item1.style.transform = `translate(${x * -200}px, ${y * -200}px)`;
+            item2.style.transform = `translate(${x * -300}px, ${y * -300}px)`;
+            item3.style.transform = `translate(${x * -400}px, ${y * -400}px)`;
+        });
+    </script>
+</body>
+</html>
