@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>Układ Słoneczny</title>
     <style>
@@ -25,39 +26,75 @@
     </style>
 </head>
 <body>
-
         <header style="padding-top: 8vh;">
-            <h1 style="color: #fff; text-align: center;">Matka Ziemia</h1>
             <nav class="horizontal-menu">
                 <div class="logo">
                     <a href="index.html"
                     ><img alt="Ziemia" class="logo1" src="assets/logo.png"
                     /></a>
                 </div>
-                <menu>
-                    <li><a href="index.html">Kosmiczne cuda</a></li>
-                    <li><a href="#">Znani</a></li>
-                    <li><a href="#">Nowinki</a></li>
-                    <li><a href="#">Blog</a></li>
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" >
+                    <div class="hamburger"></div>
+                </label>
+                <menu id="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="kosmiczneCuda.html">Kosmiczne cuda</a></li>
+						<li><a href="znani.html">Znani</a></li>
+						<li><a href="nowinki.html">Nowinki</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
                 </menu>
-                <div></div>
+                <div/>
             </nav>
+            <h1 style="color: #fff; text-align: center;">Matka Ziemia</h1>
         </header>
             <section id="ziemia" class="planet-info">
         <h2>Ziemia</h2>
         <img src="assets/ziemia/ziemiaBaner.jpg" alt="Ziemia">
         <p class="planet-description">
-            Opis Merkurego...
+            Ziemia jest trzecią planetą od Słońca i jedyną znaną planetą, na której istnieje życie. Jest to planeta skalista, która posiada unikalną atmosferę bogatą w tlen, co umożliwia istnienie życia. Ziemia jest niezwykle zróżnicowaną planetą, z obszarami pokrytymi lądami, oceanami i lodowcami. Posiada jeden naturalny satelitę - Księżyc. Ziemia jest miejscem, które jest domem dla milionów gatunków roślin i zwierząt, a także dla ludzkiej cywilizacji. Badania Ziemi są kluczowe dla zrozumienia procesów związanych z klimatem, geologią i biologią planety oraz wpływu działalności człowieka na jej środowisko.
         </p>
     </section>
-    <section id="venus" class="planet-info">
-        <h2>Wenus</h2>
-        <img src="assets/ziemia/ziemiaKsiezyc.jpg" alt="Wenus">
-        <p class="planet-description">
-            Opis Wenus...
-        </p>
-    </section>
-    <!-- Dodaj sekcje dla każdej planety w Układzie Słonecznym -->
+    <section class="planet-info">
+    <h2>Parametry Ziemi</h2>
+
+<table>
+  <tr>
+    <th>Parametr</th>
+    <th>Wartość</th>
+  </tr>
+  <tr>
+    <td>Średnica</td>
+    <td>12 742 km</td>
+  </tr>
+  <tr>
+    <td>Masa</td>
+    <td>5,972 × 10^24 kg</td>
+  </tr>
+  <tr>
+    <td>Okres obrotu wokół własnej osi</td>
+    <td>23 godziny, 56 minut</td>
+  </tr>
+  <tr>
+    <td>Okres obiegu wokół Słońca</td>
+    <td>365,25 dni</td>
+  </tr>
+  <tr>
+    <td>Średnia temperatura powierzchni</td>
+    <td>około 15°C</td>
+  </tr>
+  <tr>
+    <td>Atmosfera</td>
+    <td>Zawiera 78% azotu, 21% tlenu, śladowe ilości gazów</td>
+  </tr>
+  <tr>
+    <td>Odległość od Słońca</td>
+    <td>średnio 149,6 mln km</td>
+  </tr>
+</table>
+</section>
     <footer id="footer">
         <div class="containerFooter">
             <p>&copy; 2023 Cosmos. Wszelkie prawa zastrzeżone.</p>
@@ -65,15 +102,14 @@
                 <ul>
                     <li><a href="index.html">Strona główna</a></li>
                     <li><a href="#">O nas</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
             <address>
-                Adres: ul. Krakowska 123, 00-000 Warszawa<br />
+                Adres: ul. Rejtana 123, 35-025 Rzeszów<br />
                 Telefon: (123) 456-7890<br />
                 E-mail: cosmos@info.com
             </address>
-            
         </div>
     </footer>
 </body>

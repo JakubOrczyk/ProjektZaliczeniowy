@@ -1,7 +1,27 @@
+/**
+ * Kontener paralaksy.
+ * @type {HTMLElement}
+ */
 const parallaxContainer = document.getElementById('parallaxContainer');
+
+/**
+ * Pierwszy element paralaksy.
+ * @type {HTMLElement}
+ */
 const item1 = document.getElementById('item1');
+
+/**
+ * Drugi element paralaksy.
+ * @type {HTMLElement}
+ */
 const item2 = document.getElementById('item2');
+
+/**
+ * Trzeci element paralaksy.
+ * @type {HTMLElement}
+ */
 const item3 = document.getElementById('item3');
+
 /**
  * Dodaje efekt paralaksy do kontenera.
  * @param {MouseEvent} e - Obiekt zdarzenia myszy.
@@ -25,28 +45,32 @@ document.addEventListener('DOMContentLoaded', function () {
      * @type {NodeListOf<HTMLAnchorElement>}
      */
     const asideLinks = document.querySelectorAll('aside a');
+
     /**
-    * Sekcje boczne.
-    * @type {NodeListOf<HTMLElement>}
-    */
+     * Sekcje boczne.
+     * @type {NodeListOf<HTMLElement>}
+     */
     const asideDivs = document.querySelectorAll('aside div');
-        /**
-         * Indeks aktywnego linku.
-         * @type {number}
-         */
+
+    /**
+     * Indeks aktywnego linku.
+     * @type {number}
+     */
     let activeLinkIndex = 0;
-        /**
-         * Ustawia aktywny link.
-         * @param {number} index - Indeks linku.
-         */
+
+    /**
+     * Ustawia aktywny link.
+     * @param {number} index - Indeks linku.
+     */
     const setActiveLink = (index) => {
         asideDivs.forEach(div => div.style.backgroundColor = '#fff');
         asideDivs[index].style.backgroundColor = '#111111';
     }
-        /**
-         * Obserwator intersekcji dla sekcji bocznych.
-         * @type {IntersectionObserver}
-         */
+
+    /**
+     * Obserwator intersekcji dla sekcji bocznych.
+     * @type {IntersectionObserver}
+     */
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -56,15 +80,27 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }, { threshold: 0.5 });
-
+    /**
+     * Obserwuje sekcje boczne w nawigacji.
+     */
     asideLinks.forEach(link => {
+        /**
+         * Identyfikator docelowej sekcji.
+         * @type {string}
+         */
         const targetId = link.getAttribute('href').substring(1);
+        /**
+         * Element docelowej sekcji.
+         * @type {HTMLElement}
+         */
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
             observer.observe(targetElement);
         }
     });
-
+    /**
+     * Dodaje obsługę kliknięcia na link boczny.
+     */
     asideLinks.forEach((link, index) => {
         link.addEventListener('click', function (event) {
             event.preventDefault();

@@ -2,51 +2,40 @@
 <html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Paralaksa</title>
 		<link rel="stylesheet" href="style.css" />
-		<style>
-			* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-			body {
-    width: 100%;
-}
-
-		</style>
 	</head>
 	<body>
 		<header id="header">
 			<nav class="horizontal-menu">
 				<div class="logo">
 					<a href="index.html"
-					><img alt="Ziemia" class="logo1" src="assets/logo.png"
+						><img alt="Ziemia" class="logo1" src="assets/logo.png"
 					/></a>
 				</div>
-				<menu>
-					<ul>
-						<li><a href="kosmiczneCuda.html">Kosmiczne cuda</a></li>
-						<li><a href="test.html">Znani</a></li>
-						<li><a href="#">Nowinki</a></li>
-						<li><a href="#">Blog</a></li>
-					</ul>
-				</menu>
 				<input type="checkbox" id="toggle" />
-				<label for="toggle">
+				<label for="toggle" >
 					<div class="hamburger"></div>
 				</label>
-                
+				<menu id="menu">
+					<ul>
+						<li><a href="kosmiczneCuda.html">Kosmiczne cuda</a></li>
+						<li><a href="znani.html">Znani</a></li>
+						<li><a href="nowinki.html">Nowinki</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</menu>
+				<div/>
 			</nav>
-			<div class="parallax-container parallax-layer" id="parallaxContainer" >
-				<div class="parallax-layer layer2"  id="item1">
+			<div class="parallax-container parallax-layer" id="parallaxContainer">
+				<div class="parallax-layer layer2" id="item1">
 					<img alt="Księżyc" src="assets/ksiezyc/ksiezyc.webp" />
 				</div>
-				<div class="parallax-layer layer3"  id="item2">
+				<div class="parallax-layer layer3" id="item2">
 					<img alt="Ziemia" src="assets/ziemia/ziemiaAI_preview_rev_1.png" />
 				</div>
-				<div class="parallax-layer layer4"  id="item3">
+				<div class="parallax-layer layer4" id="item3">
 					<img alt="Mars" src="assets/mars/mars.webp" />
 				</div>
 				<article id="tekst-header">
@@ -93,7 +82,7 @@
 					<img
 						alt="mgławica ślimaka"
 						class="image-main"
-						src="assets/slimakmglawica.jpg"
+						src="assets/Mglawica_Slimak.jpg"
 					/>
 				</div>
 				<article class="tekst">
@@ -119,7 +108,11 @@
 					natura nadal stanowi głęboką zagadkę dla astronomów.
 				</article>
 				<div class="parallax-layer layer6">
-					<img alt="Czarna dziura" class="image-main" src="assets/czarnadziura.jpg" />
+					<img
+						alt="Czarna dziura"
+						class="image-main"
+						src="assets/czarnadziura.jpg"
+					/>
 				</div>
 			</div>
 		</section>
@@ -128,92 +121,163 @@
 				<h1 style="color: #fff">Układ Słoneczny</h1>
 			</div>
 			<div class="ukladSloneczny">
-			<div class="ukladSloneczny1">
-				<a href="neptun.html" style="display: flex; justify-content: center; align-items: center; width: 10vw;">
-					<img
-					alt="Neptun"
-					class="image-uklad-planetyM"
-					src="assets/neptun/neptun.webp"
-					style="height: 100%; width: 100%;"
-					/>
-				</a>
+				<div class="ukladSloneczny1">
+					<a
+						href="neptun.html"
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 10vw;
+						"
+					>
+						<img
+							alt="Neptun"
+							class="image-uklad-planetyM"
+							src="assets/neptun/neptun.webp"
+							style="height: 100%; width: 100%"
+						/>
+					</a>
+				</div>
+				<div class="ukladSloneczny2">
+					<a
+						href="mars.html"
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 20vw;
+						"
+					>
+						<img
+							alt="Mars"
+							class="image-uklad-planetyD"
+							src="assets/mars/mars.webp"
+							style="height: 100%; width: 100%"
+						/>
+					</a>
+					<a
+						href="wenus.html"
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 20vw;
+						"
+					>
+						<img
+							alt="Wenus"
+							class="image-uklad-planetyD"
+							src="assets/wenus/wenus.png"
+							style="height: 100%; width: 100%"
+						/>
+					</a>
+				</div>
+				<div class="ukladSloneczny3">
+					<a
+						href="jowisz.html"
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 30vw;
+						"
+					>
+						<img
+							alt="Jowisz"
+							class="image-uklad-planetyD"
+							src="assets/jowisz/jowisz.webp"
+							style="height: 100%; width: 100%"
+						/>
+					</a>
+
+					<a
+						href="slonce.html"
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 30vw;
+						"
+					>
+						<img
+							alt="Słońce"
+							class="image-uklad"
+							src="assets/slonce/slonce_1.png"
+							style="height: 100%; width: 100%"
+						/>
+					</a>
+
+					<a
+						href="saturn.html"
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 30vw;
+						"
+					>
+						<img
+							alt="Saturn"
+							class="image-uklad-planetyD"
+							src="assets/saturn/saturn.webp"
+							style="height: 100%; width: 100%"
+						/>
+					</a>
+				</div>
+				<div class="ukladSloneczny4">
+					<a
+						href="ziemia.html"
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 30vw;
+						"
+					>
+						<img
+							alt="Ziemia"
+							class="image-uklad-planetyD"
+							src="assets/ziemia/ziemiaAI_preview_rev_1.png"
+							style="height: 100%; width: 100%"
+						/>
+					</a>
+					<a
+						href="merkury.html"
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 10vw;
+						"
+					>
+						<img
+							alt="Merkurya"
+							class="image-uklad-planetyMM"
+							src="assets/merkury/merkury.png"
+							style="height: 100%; width: 100%"
+						/>
+					</a>
+				</div>
+				<div class="ukladSloneczny5">
+					<a
+						href="uran.html"
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 10vw;
+						"
+					>
+						<img
+							alt="Uran"
+							class="image-uklad-planetyM"
+							src="assets/uran/uran.webp"
+							style="height: 100%; width: 100%"
+						/>
+					</a>
+				</div>
 			</div>
-			<div class="ukladSloneczny2">
-				<a href="mars.html" style="display: flex; justify-content: center; align-items: center; width: 20vw;">
-					<img
-					alt="Mars"
-					class="image-uklad-planetyD"
-					src="assets/mars/mars.webp"
-					style="height: 100%; width: 100%;"
-					/>
-				</a>
-				<a href="wenus.html" style="display: flex; justify-content: center; align-items: center; width: 20vw;">
-					<img
-					alt="Wenus"
-					class="image-uklad-planetyD"
-					src="assets/wenus/wenus.png"
-					style="height: 100%; width: 100%;"
-					/>
-				</a>
-			</div>
-			<div class="ukladSloneczny3">
-				<a href="jowisz.html" style="display: flex; justify-content: center; align-items: center; width: 30vw;">
-					<img
-					alt="Jowisz"
-					class="image-uklad-planetyD"
-					src="assets/jowisz/jowisz.webp"
-					style="height: 100%; width: 100%;"
-					/>
-				</a>
-				
-				
-				<a href="slonce.html" style="display: flex; justify-content: center; align-items: center; width: 30vw;">
-					<img
-						alt="Słońce"
-						class="image-uklad"
-						src="assets/slonce/slonce_1.png"
-						style="height: 100%; width: 100%;"
-					/>
-				</a>
-				
-				<a href="saturn.html" style="display: flex; justify-content: center; align-items: center; width: 30vw;">
-					<img
-					alt="Saturn"
-					class="image-uklad-planetyD"
-					src="assets/saturn/saturn.webp"
-					style="height: 100%; width: 100%;"
-					/>
-				</a>
-			</div>
-			<div class="ukladSloneczny4">
-				<a href="ziemia.html" style="display: flex; justify-content: center; align-items: center; width: 30vw;">
-					<img
-					alt="Ziemia"
-					class="image-uklad-planetyD"
-					src="assets/ziemia/ziemiaAI_preview_rev_1.png"
-					style="height: 100%; width: 100%;"
-					/>
-				</a>
-				<a href="merkury.html" style="display: flex; justify-content: center; align-items: center; width: 10vw;">
-					<img
-					alt="Merkurya"
-					class="image-uklad-planetyMM"
-					src="assets/merkury/merkury.png"
-					style="height: 100%; width: 100%;"
-					/>
-				</a>
-			</div>
-			<div class="ukladSloneczny5">
-				<a href="uran.html" style="display: flex; justify-content: center; align-items: center; width: 10vw;">
-					<img
-					alt="Uran"
-					class="image-uklad-planetyM"
-					src="assets/uran/uran.webp"
-					style="height: 100%; width: 100%;"
-					/>
-				</a>
-			</div>
-		</div>
 		</section>
 		<section id="GwiazdyEdukacj">
 			<div style="text-align: center; color: #fff; margin: 5vh">
@@ -245,7 +309,12 @@
 					<article class="tekstPerson">
 						<h2>Mikołaj Kopernik</h2>
 						<br />
-						Mikołaj Kopernik (1473-1543) był polskim astronomem, matematykiem i duchownym. Jego najważniejszym osiągnięciem było sformułowanie teorii heliocentrycznej, która zakładała, że to Ziemia obraca się wokół Słońca, a nie odwrotnie, jak głoszono w ówczesnym geocentrycznym modelu Ptolemeusza. To przełomowe odkrycie dało początek nowej epoce w rozwoju astronomii i nauki.
+						Mikołaj Kopernik (1473-1543) był polskim astronomem, matematykiem i
+						duchownym. Jego najważniejszym osiągnięciem było sformułowanie
+						teorii heliocentrycznej, która zakładała, że to Ziemia obraca się
+						wokół Słońca, a nie odwrotnie, jak głoszono w ówczesnym
+						geocentrycznym modelu Ptolemeusza. To przełomowe odkrycie dało
+						początek nowej epoce w rozwoju astronomii i nauki.
 					</article>
 				</div>
 				<div id="conteinerPerson">
@@ -267,22 +336,22 @@
 			</div>
 		</section>
 		<footer id="footer">
-            <div class="containerFooter">
-                <p>&copy; 2023 Cosmos. Wszelkie prawa zastrzeżone.</p>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Strona główna</a></li>
-                        <li><a href="#">O nas</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-                </nav>
-                <address>
-                    Adres: ul. Krakowska 123, 00-000 Warszawa<br />
-                    Telefon: (123) 456-7890<br />
-                    E-mail: cosmos@info.com
-                </address>
-            </div>
-        </footer>
+			<div class="containerFooter">
+				<p>&copy; 2023 Cosmos. Wszelkie prawa zastrzeżone.</p>
+				<nav>
+					<ul>
+						<li><a href="index.html">Strona główna</a></li>
+						<li><a href="#">O nas</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</nav>
+				<address>
+					Adres: ul. Rejtana 123, 35-025 Rzeszów<br />
+					Telefon: (123) 456-7890<br />
+					E-mail: cosmos@info.com
+				</address>
+			</div>
+		</footer>
 		<script src="script.js"></script>
 	</body>
 </html>

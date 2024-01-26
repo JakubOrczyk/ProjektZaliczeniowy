@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>Układ Słoneczny</title>
     <style>
@@ -27,53 +28,102 @@
 </head>
 <body>
     <header style="padding-top: 8vh;">
-        <h1 style="color: #fff; text-align: center;">Słońce Nasza Gwiazda</h1>
         <nav class="horizontal-menu">
             <div class="logo">
                 <a href="index.html"
                 ><img alt="Ziemia" class="logo1" src="assets/logo.png"
                 /></a>
             </div>
-            <menu>
-                <li><a href="index.html">Kosmiczne cuda</a></li>
-                <li><a href="#">Znani</a></li>
-                <li><a href="#">Nowinki</a></li>
-                <li><a href="#">Blog</a></li>
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" >
+                <div class="hamburger"></div>
+            </label>
+            <menu id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="kosmiczneCuda.html">Kosmiczne cuda</a></li>
+						<li><a href="znani.html">Znani</a></li>
+						<li><a href="nowinki.html">Nowinki</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
             </menu>
             <div/>
         </nav>
+        <h1 style="color: #fff; text-align: center;">Słońce Nasza Gwiazda</h1>
     </header>
     <section id="firstSec" class="planet-info">
-        <h2>Merkury</h2>
         <img src="assets/slonce.jpg" alt="Merkury">
         <p class="planet-description">
-            Słońce, gwiazda pośród milionów innych, jest centralną postacią naszego Układu Słonecznego. To olbrzymia, gorąca kula plazmy, która nieustannie dostarcza energii naszej planecie Ziemi i całemu systemowi planetarnemu.
+            Słońce jest gwiazdą znajdującą się w centrum Układu Słonecznego, która dostarcza energii niezbędnej do życia na Ziemi. Jest to olbrzymia kula gorącego gazu, w której zachodzą reakcje termojądrowe, przekształcające wodór w hel. Słońce emituje światło i ciepło, które są niezbędne dla życia na naszej planecie. Jego promień wynosi około 696 340 kilometrów, a temperatura na jego powierzchni sięga około 5500 stopni Celsjusza. Słońce jest głównym źródłem energii w Układzie Słonecznym i warunkuje wiele procesów atmosferycznych i klimatycznych na Ziemi i innych planetach.
         </p>
     </section>
     <section id="Sec" class="planet-info">
-        <h2>Wenus</h2>
         <img src="images/venus.jpg" alt="Wenus">
         <p class="planet-description">
-            Słońce: Nasza Gwiazda
 Słońce, gwiazda pośród milionów innych, jest centralną postacią naszego Układu Słonecznego. To olbrzymia, gorąca kula plazmy, która nieustannie dostarcza energii naszej planecie Ziemi i całemu systemowi planetarnemu.
-
-Podstawowe Fakty
+<br>
+Podstawowe Fakty<br>
 Promień i Masa: Średnica Słońca to ponad 1,3 miliona razy średnica Ziemi, a jego masa przekracza 330 tysięcy razy masę naszej planety.
 Struktura: Składa się głównie z wodoru (ok. 74%) i helu (ok. 24%) oraz niewielkich ilości innych pierwiastków.
-Reakcje Termojądrowe: Słońce generuje energię poprzez reakcje termojądrowe, łącząc jądra atomów wodoru w jądra helu.
-Cykl Życia Słońca
+Reakcje Termojądrowe: Słońce generuje energię poprzez reakcje termojądrowe, łącząc jądra atomów wodoru w jądra helu.<br>
+Cykl Życia Słońca<br>
 Faza Ciągu Głównego: Obecnie Słońce znajduje się w fazie ciągu głównego, gdzie wytwarza energię poprzez reakcje jądrowe.
-Ewolucja Gwiazdy: W przyszłości Słońce przekształci się w olbrzyma czerwonego, a następnie zacznie stopniowo kurczyć się, stając się białym karłem.
-Wpływ na Ziemię
+Ewolucja Gwiazdy: W przyszłości Słońce przekształci się w olbrzyma czerwonego, a następnie zacznie stopniowo kurczyć się, stając się białym karłem.<br>
+Wpływ na Ziemię<br>
 Energia Słoneczna: To główne źródło energii dla życia na Ziemi, napędzające procesy biologiczne i klimatyczne.
-Polarne Zorze: Słońce jest źródłem polarnych zorzy, efektów wizualnych wynikających z interakcji energii słonecznej z polarnymi obszarami atmosfery Ziemi.
-Badania i Odkrycia
-Badania Teleskopowe: Dzięki teleskopom i zaawansowanym sondom naukowcy nadal zgłębiają tajemnice Słońca, monitorując jego aktywność i zjawiska.
+Polarne Zorze: Słońce jest źródłem polarnych zorzy, efektów wizualnych wynikających z interakcji energii słonecznej z polarnymi obszarami atmosfery Ziemi.<br>
+Badania i Odkrycia<br>
+Badania Teleskopowe: Dzięki teleskopom i zaawansowanym sondom naukowcy nadal zgłębiają tajemnice Słońca, monitorując jego aktywność i zjawiska.<br>
 Misje Kosmiczne: Misje kosmiczne, takie jak Słońce i Heliosferyczny Obserwator, dostarczają nam niezwykłych danych dotyczących struktury i funkcji Słońca.
 Słońce jest niezwykłym źródłem zjawisk, energii i inspiracji dla naukowców i badaczy, kontynuujących odkrywanie jego tajemnic i zrozumienie roli, jaką odgrywa w naszym Układzie Słonecznym.
         </p>
     </section>
-    
+    <section class="planet-info">
+        <h2>Parametry Słońca</h2>
+
+<table>
+    <tr>
+        <th>Parametr</th>
+        <th>Wartość</th>
+    </tr>
+    <tr>
+        <td>Średnica</td>
+        <td>1 391 000 km</td>
+    </tr>
+    <tr>
+        <td>Temperatura powierzchni</td>
+        <td>Około 5500°C</td>
+    </tr>
+    <tr>
+        <td>Temperatura jądra</td>
+        <td>Około 15 000 000°C</td>
+    </tr>
+    <tr>
+        <td>Masa</td>
+        <td>1.989 × 10^30 kg</td>
+    </tr>
+    <tr>
+        <td>Typ</td>
+        <td>Gwiazda sekwencji głównej</td>
+    </tr>
+    <tr>
+        <td>Promień orbity Ziemi</td>
+        <td>Około 149,6 mln km</td>
+    </tr>
+    <tr>
+        <td>Okres obrotu</td>
+        <td>Około 25-36 dni</td>
+    </tr>
+    <tr>
+        <td>Liczba planet</td>
+        <td>8 (wraz z Plutonem)</td>
+    </tr>
+    <tr>
+        <td>Liczba naturalnych satelitów</td>
+        <td>0</td>
+    </tr>
+</table>
+    </section>
     <footer id="footer">
         <div class="containerFooter">
             <p>&copy; 2023 Cosmos. Wszelkie prawa zastrzeżone.</p>
@@ -81,11 +131,11 @@ Słońce jest niezwykłym źródłem zjawisk, energii i inspiracji dla naukowcó
                 <ul>
                     <li><a href="index.html">Strona główna</a></li>
                     <li><a href="#">O nas</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
             <address>
-                Adres: ul. Krakowska 123, 00-000 Warszawa<br />
+                Adres: ul. Rejtana 123, 35-025 Rzeszów<br />
                 Telefon: (123) 456-7890<br />
                 E-mail: cosmos@info.com
             </address>
