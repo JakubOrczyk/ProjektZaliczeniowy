@@ -415,9 +415,22 @@ th {
 .planet-info {
 	margin-bottom: 20px;
 	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.teksPlanet{
+	width: 50vw;
+padding: auto;
+}
+.table-info {
+	width: 50vw;
+	margin-bottom: 20px;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: auto;
 }
 
 .planet-info img {
@@ -428,22 +441,21 @@ th {
 }
 
 .planet-description {
+	width: 40vw;
 	text-align: justify;
 	color: #fff;
 }
 
 .contentsInfo {
+	padding: auto;
+	width: 100vw;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 
 }
 
-.contentsInfo p {
-	width: 35vw;
-	padding: 1vw;
-	font-weight: 500;
-}
+
 
 h2{
 	color: #fff;
@@ -655,6 +667,22 @@ input[type="submit"]:hover {
 	}
 
 	.planet-info img {
+		max-width: 90vw;
+	}
+	.table-info {
+		width: 90vw;
+	}
+	.planet-info {
+		flex-direction: column;
+	}
+	.teksPlanet{
+		width: 90vw;
+	padding: auto;
+	}
+	.planet-description {
+		width: 90vw;
+	}
+	.imgKosmiczne{
 		max-width: 90vw;
 	}
 }
