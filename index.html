@@ -2,9 +2,20 @@
 <html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Paralaksa</title>
 		<link rel="stylesheet" href="style.css" />
+		<style>
+			* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+			body {
+    width: 100%;
+}
+
+		</style>
 	</head>
 	<body>
 		<header id="header">
@@ -14,10 +25,6 @@
 					><img alt="Ziemia" class="logo1" src="assets/logo.png"
 					/></a>
 				</div>
-				<input type="checkbox" id="toggle" />
-				<label for="toggle">
-					<div class="hamburger"></div>
-				</label>
 				<menu>
 					<ul>
 						<li><a href="kosmiczneCuda.html">Kosmiczne cuda</a></li>
@@ -26,6 +33,10 @@
 						<li><a href="#">Blog</a></li>
 					</ul>
 				</menu>
+				<input type="checkbox" id="toggle" />
+				<label for="toggle">
+					<div class="hamburger"></div>
+				</label>
                 
 			</nav>
 			<div class="parallax-container parallax-layer" id="parallaxContainer" >

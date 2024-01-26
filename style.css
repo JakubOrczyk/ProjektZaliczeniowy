@@ -1,8 +1,6 @@
 body {
 	margin: 0;
 	background-color: #000;
-	width: 100vw;
-	
 	
 }
 ::-webkit-scrollbar {
@@ -91,59 +89,10 @@ nav menu ul{
 	right: 9999px;
 }
 
-@media (max-width: 800px) {
-	
-	.hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
 
-    .horizontal-menu menu ul {
-        display: none;
-        transition: max-height 0.3s ease-out;
-        max-height: 0;
-        overflow: hidden;
-    }
 
-    .horizontal-menu #toggle:checked {
-		display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-height: 200px;
-	}
-    #toggle:checked ~ menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-height: 200px;
-    }
-	menu ul {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
 
-	menu ul li {
-		list-style: none;
-		position: relative;
-	}
 
-	menu ul li ul li {
-		display: none;
-		position: relative;
-	}
-
-	menu ul li:hover ul li {
-		display: flex;
-	}
-
-	menu ul li ul {
-		flex-direction: column;
-	}
-
-	
-}
 
 
 
@@ -162,7 +111,7 @@ nav menu ul{
 
 .parallax-container {
 	background-image: url("assets/layer1.jpg");
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	position: relative;
 }
@@ -396,7 +345,7 @@ aside {
 	
 	text-align: center;
 	color: #fff;
-	width: 30vw;
+	width: 30%;
     height: 50vh;
 }
 
@@ -460,6 +409,106 @@ address {
 
 
 
+@media (max-width: 800px) {
+	#GwiazdyEdukacj {
+		display: flex;
+		flex-direction: column;
+	}
+	#ukladPerson {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#conteinerPerson {
+		width: 100%;
+	}
+	
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+    }
 
+    .horizontal-menu menu ul {
+        display: none;
+        transition: max-height 0.3s ease-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    #toggle:checked ~ .horizontal-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 200px;
+    }
+
+    .logo {
+        display: none; 
+    }
+
+    .horizontal-menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .horizontal-menu ul li {
+        list-style: none;
+        position: relative;
+    }
+
+    .horizontal-menu ul li ul li {
+        display: none;
+        position: relative;
+    }
+
+    .horizontal-menu ul li:hover ul li {
+        display: flex;
+    }
+
+    .horizontal-menu ul li ul {
+        flex-direction: column;
+    }
+	.parallax-container {
+		display: none;
+	}
+
+	footer {
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		background-color: #111111;
+		color: #fff;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+    .containerFooter {
+        padding: 10px; /* zmniejszenie odstępów */
+    }
+
+    footer ul {
+        margin-top: 10px; /* zmniejszenie odstępów */
+    }
+	.layer5 {
+		flex-direction: column;
+	}
+	#ukladSloneczny{
+		display: none;
+	}
+	aside {
+		right: 0;
+		display: none;
+	}
+	.tekstPerson {
+	
+		text-align: center;
+		color: #fff;
+		width: 100%;
+	}
+	
+}
 
 
