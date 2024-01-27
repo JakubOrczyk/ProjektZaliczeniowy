@@ -1,123 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-            gap: 20px;
-        }
-    
-        .osoba {
-            border: 1px solid #ccc;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			.grid-container {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+				gap: 20px;
+			}
 
-        }
-    
-        .osoba img {
-            max-width: 30vh;
-            max-height: 30vh;
-        }
-    
-        .textOsoba{
-            margin-top: 10px;
-            color: #fff;
-        }
-        @media screen and (max-width: 768px) {
-            .grid-container {
-            grid-template-columns: 1fr;
-        }
-        }
+			.osoba {
+				border: 1px solid #ccc;
+				padding: 20px;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+			}
 
-    </style>
-</head>
-<body>
-    <header style="padding-top: 8vh;">
-        <nav class="horizontal-menu">
-            <div class="logo">
-                <a href="index.html"
-                ><img alt="Ziemia" class="logo1" src="assets/logo.png"
-                /></a>
-            </div>
-            <input type="checkbox" id="toggle" />
-            <label for="toggle" >
-                <div class="hamburger"></div>
-            </label>
-            <menu id="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="kosmiczneCuda.html">Kosmiczne cuda</a></li>
-                    <li><a href="znani.html">Znani</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </menu>
-            <div/>
-        </nav>
-        
-    </header>
-    <div class="grid-container">
-        <div class="osoba">
-            <img src="assets/kopernik.jpg" alt="Mikołaj Kopernik">
-            <p class="textOsoba">Mikołaj Kopernik</p>
-        </div>
-        <div class="osoba">
-            <img src="assets/hubble.jpeg" alt="Edwin Hubble">
-            <p class="textOsoba">Edwin Hubble</p>
-        </div>
-        <div class="osoba">
-            <img src="assets/Stephen_Hawking.jpg" alt="Stephen Hawking">
-            <p class="textOsoba">Stephen Hawking</p>
-        </div>
-        <div class="osoba">
-            <img src="assets/NeliArmstrong.jpeg" alt="Neil Armstrong">
-            <p class="textOsoba">Neil Armstrong</p>
-        </div>
-        <div class="osoba">
-            <img src="assets/Buzz.jpeg" alt="Buzz Aldrin">
-            <p class="textOsoba">Buzz Aldrin</p>
-        </div>
-        <div class="osoba">
-            <img src="assets/Yuri.jpeg" alt="Yuri Gagarin">
-            <p class="textOsoba">Yuri Gagarin</p>
-        </div>
-        <div class="osoba">
-            <img src="assets/Kepler.jpeg" alt="Johannes Kepler">
-            <p class="textOsoba">Johannes Kepler</p>
-        </div>
-        <div class="osoba">
-            <img src="assets/huygens.jpeg" alt="Christiaan Huygens">
-            <p class="textOsoba">Christiaan Huygens</p>
-        </div>
-        <div class="osoba">
-            <img src="assets/Gamow.jpeg" alt="George Gamow">
-            <p class="textOsoba">George Gamow</p>
-        </div>
-    </div>
-    <footer id="footer">
-        <div class="containerFooter">
-            <p>&copy; 2023 Cosmos. Wszelkie prawa zastrzeżone.</p>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-            <address>
-                Adres: ul. Rejtana 123, 35-025 Rzeszów<br />
-                Telefon: (123) 456-7890<br />
-                E-mail: cosmos@info.com
-            </address>
-        </div>
-    </footer>
-</body>
+			.osoba img {
+				max-width: 30vh;
+				max-height: 30vh;
+			}
+
+			.textOsoba {
+				margin-top: 10px;
+				color: #fff;
+			}
+			@media screen and (max-width: 768px) {
+				.grid-container {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header style="padding-top: 8vh">
+			<nav class="horizontal-menu">
+				<div class="logo">
+					<a href="index.html"
+						><img alt="Ziemia" class="logo1" src="assets/logo.png"
+					/></a>
+				</div>
+				<input type="checkbox" id="toggle" />
+				<label for="toggle">
+					<div class="hamburger"></div>
+				</label>
+				<menu id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="kosmiczneCuda.html">Kosmiczne cuda</a></li>
+						<li><a href="znani.html">Znani</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</menu>
+				<div />
+			</nav>
+		</header>
+		<div class="grid-container">
+			<div class="osoba">
+				<img src="assets/kopernik.jpg" alt="Mikołaj Kopernik" />
+				<p class="textOsoba">Mikołaj Kopernik</p>
+			</div>
+			<div class="osoba">
+				<img src="assets/hubble.jpeg" alt="Edwin Hubble" />
+				<p class="textOsoba">Edwin Hubble</p>
+			</div>
+			<div class="osoba">
+				<img src="assets/Stephen_Hawking.jpg" alt="Stephen Hawking" />
+				<p class="textOsoba">Stephen Hawking</p>
+			</div>
+			<div class="osoba">
+				<img src="assets/NeilArmstrong.jpeg" alt="Neil Armstrong" />
+				<p class="textOsoba">Neil Armstrong</p>
+			</div>
+			<div class="osoba">
+				<img src="assets/Buzz.jpeg" alt="Buzz Aldrin" />
+				<p class="textOsoba">Buzz Aldrin</p>
+			</div>
+			<div class="osoba">
+				<img src="assets/Yuri.jpeg" alt="Yuri Gagarin" />
+				<p class="textOsoba">Yuri Gagarin</p>
+			</div>
+			<div class="osoba">
+				<img src="assets/Kepler.jpeg" alt="Johannes Kepler" />
+				<p class="textOsoba">Johannes Kepler</p>
+			</div>
+			<div class="osoba">
+				<img src="assets/huygens.jpeg" alt="Christiaan Huygens" />
+				<p class="textOsoba">Christiaan Huygens</p>
+			</div>
+			<div class="osoba">
+				<img src="assets/Gamow.jpeg" alt="George Gamow" />
+				<p class="textOsoba">George Gamow</p>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="containerFooter">
+				<p>&copy; 2023 Cosmos. Wszelkie prawa zastrzeżone.</p>
+				<nav>
+					<ul>
+						<li><a href="index.html">Strona główna</a></li>
+						<li><a href="#">O nas</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</nav>
+				<address>
+					Adres: ul. Rejtana 123, 35-025 Rzeszów<br />
+					Telefon: (123) 456-7890<br />
+					E-mail: cosmos@info.com
+				</address>
+			</div>
+		</footer>
+	</body>
 </html>

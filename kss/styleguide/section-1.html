@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content=""/>
+  <meta name="generator" content="kss-node"/>
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="kss-assets/kss.css"/>
+  <link rel="stylesheet" href="../kss-style.css"/>
+
+</head>
+<body id="kss-node" >
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="index.html">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-1.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Cosmos - Strona główna</span>
+        </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-1.html#kssref-1-1">
+                  <span class="kss-nav__ref ">1.1</span
+                  ><span class="kss-nav__name">Header</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-1.html#kssref-1-2">
+                  <span class="kss-nav__ref ">1.2</span
+                  ><span class="kss-nav__name">Aside</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-1.html#kssref-1-3">
+                  <span class="kss-nav__ref ">1.3</span
+                  ><span class="kss-nav__name">Artykuły</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-1.html#kssref-1-4">
+                  <span class="kss-nav__ref ">1.4</span
+                  ><span class="kss-nav__name">Układ Słoneczny</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-1.html#kssref-1-5">
+                  <span class="kss-nav__ref ">1.5</span
+                  ><span class="kss-nav__name">Edukacyjne Gwiazdy</span>
+                </a>
+              </li>
+            </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-2.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Kosmiczne Cuda</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-3.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Znani</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-4.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Kontakt</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-5.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Nav</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-6.html">
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Footer</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-7.html">
+          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Planety</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="Content">
+  <article>
+
+    <div id="kssref-1" class="kss-section kss-section--depth-1 ">
+
+      <div class="kss-style">
+        <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-1">
+            <span class="kss-title__ref">
+              1
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Cosmos - Strona główna
+          </a>
+        </h1>
+
+
+          <div class="kss-description">
+            <h3>Kod HTML:</h3>
+<ul>
+<li>
+<p><code>&lt;div id=&quot;header&quot;&gt;</code>, zawiera nagłówek strony kontener paralaksy i obiekty reagujące z nią</p>
+</li>
+<li>
+<p><code>&lt;aside&gt;</code> zawiera baner boczny służacy do szybszej navigacji po stronie głównej</p>
+</li>
+<li>
+<p>Sekcja <code>&lt;section class=&quot;main-section&quot; id=&quot;main-section&quot;&gt;</code>, zawiera kontener z artykułem i grafiką do tekstu.</p>
+</li>
+<li>
+<p><code>&lt;section id=&quot;ukladSloneczny&quot;&gt;</code> zawiera responsywny układ słoneczny reagujący na najechanie.</p>
+</li>
+<li>
+<p>Sekcja<code>&lt;section id=&quot;GwiazdyEdukacj&quot;&gt;</code> Zawiera responsywny układ kontenerów zawierających fotografie,opis, imie i nazwisko ważnych osób.</p>
+</li>
+</ul>
+<h3>Kod CSS:</h3>
+<ul>
+<li>
+<p><strong>Styl dla nagłówka z klasą &quot;parallax-container parallax-layer&quot;:</strong> Ustawia obraz jako tło, utala wielkość i szerokość kontenera. Dopasowywuje obraz dła do wielkości i blokuje powtarzanie.</p>
+</li>
+<li>
+<p><strong>Styl dla aside:</strong> Ustawia wielkość elementu, przykleja go do prawej krawędzi ekranu.</p>
+</li>
+<li>
+<p><strong>Styl dla sekcji z klasą &quot;main-section&quot;:</strong> Ustawia sposób wyświetlania na stronie.</p>
+</li>
+<li>
+<p><strong>Styl dla artykułu z klasą &quot;tekst&quot;:</strong> Ustawia sposób wyświetlania na stronie, wielkość i kolor zawartego teksu. Centruje zawarty tekst</p>
+</li>
+<li>
+<p><strong>Styl dla sekcji z klasą &quot;ukladSloneczny&quot;:</strong> Ustawia sposób wyświetlania na stronie. Stosuje responsywny układ flex.</p>
+</li>
+<li>
+<p><strong>Styl dla sekcji z klasą &quot;GwiazdyEdukacj&quot;:</strong> Ustawia sposób wyświetlania na stronie. Stosuje responsywny układ flex. Ustawia kolor zawartego tekstu oraz format wyświetlania.</p>
+</li>
+<li>
+<p>Media queries są używane do dostosowania układu dla różnych szerokości ekranu. W zależności od szerokości ekranu, zmienia parametry układu aby dostosować się do różnych rozmiarów urządzeń.</p>
+</li>
+</ul>
+
+          </div>
+
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>style.css</code>, line 677
+        </div>
+
+    </div>
+    <section id="kssref-1-1" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-1-1">
+            <span class="kss-title__ref">
+              1.1
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Header
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-1-1" data-kss-fullscreen="kssref-1-1">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-1-1.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-1-1" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-1-1" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            	<header id="header">
+		<div class="parallax-container parallax-layer" id="parallaxContainer">
+			<div class="parallax-layer layer2" id="item1">
+				<img alt="Księżyc" src="assets/ksiezyc/ksiezyc.webp" />
+			</div>
+			<div class="parallax-layer layer3" id="item2">
+				<img alt="Ziemia" src="assets/ziemia/ziemiaAI_preview_rev_1.png" />
+			</div>
+			<div class="parallax-layer layer4" id="item3">
+				<img alt="Mars" src="assets/mars/mars.webp" />
+			</div>
+			<article id="tekst-header">
+				Jeśli kosmici odwiedzą nas kiedykolwiek, myślę, że skutki mogą być
+				podobne, jak w przypadku odkrycia Ameryki przez Krzysztofa Kolumba.
+				Jak wiadomo, wydarzenie to okazało się niezbyt pomyślne dla rdzennych
+				mieszkańców tego kontynentu. ~ Stiven Hoking
+			</article>
+		</div>
+	</header>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml">	<span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;header&quot;</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;parallax-container parallax-layer&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parallaxContainer&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;parallax-layer layer2&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;item1&quot;</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Księżyc&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/ksiezyc/ksiezyc.webp&quot;</span> /&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;parallax-layer layer3&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;item2&quot;</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Ziemia&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/ziemia/ziemiaAI_preview_rev_1.png&quot;</span> /&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;parallax-layer layer4&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;item3&quot;</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Mars&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/mars/mars.webp&quot;</span> /&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tekst-header&quot;</span>&gt;</span>
+				Jeśli kosmici odwiedzą nas kiedykolwiek, myślę, że skutki mogą być
+				podobne, jak w przypadku odkrycia Ameryki przez Krzysztofa Kolumba.
+				Jak wiadomo, wydarzenie to okazało się niezbyt pomyślne dla rdzennych
+				mieszkańców tego kontynentu. ~ Stiven Hoking
+			<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>style.css</code>, line 711
+        </div>
+
+    </section>
+    <section id="kssref-1-2" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-1-2">
+            <span class="kss-title__ref">
+              1.2
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Aside
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-1-2" data-kss-fullscreen="kssref-1-2">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-1-2.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-1-2" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-1-2" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            	<aside>
+		<a href="#header">
+			<div id="screen1"></div>
+		</a>
+		<a href="#main-section">
+			<div id="screen2"></div>
+		</a>
+		<a href="#ukladSloneczny">
+			<div id="screen3"></div>
+		</a>
+		<a href="#GwiazdyEdukacj">
+			<div id="screen3"></div>
+		</a>
+	</aside>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml">	<span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#header&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;screen1&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#main-section&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;screen2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#ukladSloneczny&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;screen3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#GwiazdyEdukacj&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;screen3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>style.css</code>, line 738
+        </div>
+
+    </section>
+    <section id="kssref-1-3" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-1-3">
+            <span class="kss-title__ref">
+              1.3
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Artykuły
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-1-3" data-kss-fullscreen="kssref-1-3">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-1-3.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-1-3" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-1-3" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            	<section class="main-section" id="main-section">
+		<div class="parallax-layer layer5">
+			<article class="tekst">
+				Supernova to ogromne i gwałtowne zjawisko astronomiczne, które
+				następuje w wyniku gwałtownej eksplozji gwiazdy. Podczas supernowej
+				dochodzi do wyzwolenia ogromnych ilości energii, które sprawiają, że
+				gwiazda staje się na krótki okres jasniejsza niż cała galaktyka, w
+				której się znajduje. Proces ten może trwać kilka dni lub nawet
+				tygodni, podczas których supernova emituje ogromne ilości światła i
+				innych promieniowań. Supernowe są kluczowym elementem w kosmicznym
+				krajobrazie, ponieważ wytwarzają i rozprzestrzeniają liczne
+				pierwiastki, które są niezbędne do formowania nowych gwiazd i planet.
+			</article>
+			<div class="parallax-layer layer6">
+				<img alt="super nowa" class="image-main" src="assets/supernowa.jpg" />
+			</div>
+		</div>
+		<div class="parallax-layer layer5">
+			<div class="parallax-layer layer6">
+				<img alt="mgławica ślimaka" class="image-main" src="assets/Mglawica_Slimak.jpg" />
+			</div>
+			<article class="tekst">
+				Mgławica Ślimaka, znana również jako M1 lub NGC 1952, to jedna z
+				najbardziej znanych i obserwowanych mgławic planetarnych. Została
+				odkryta przez francuskiego astronoma Charles'a Messiera w 1771 roku.
+				Jej nazwa pochodzi od charakterystycznego spiralnego wzoru, który
+				przypomina skręconą muszlę ślimaka. Mgławica Ślimaka znajduje się w
+				konstelacji Byka i jest pozostałością po eksplozji gwiazdy, która
+				miała miejsce około 6 000 lat temu. Dziś stanowi fascynujący obiekt
+				badawczy, pozwalając naukowcom zgłębiać tajemnice ewolucji gwiazd i
+				kosmicznych zjawisk.
+			</article>
+		</div>
+		<div class="parallax-layer layer5">
+			<article class="tekst">
+				Czarne dziury to tajemnicze obiekty astronomiczne, których grawitacja
+				jest na tyle silna, że nawet światło nie jest w stanie uciec z ich
+				obszaru, dlatego są one nazywane "czarnymi". Wewnętrzna struktura
+				czarnej dziury skrywa punkt o nieskończenie skupionej masie, zwany
+				singularnością, otoczoną horyzontem zdarzeń, czyli granicą, za którą
+				nie ma już powrotu. Choć są fascynującym obiektem badawczym, ich
+				natura nadal stanowi głęboką zagadkę dla astronomów.
+			</article>
+			<div class="parallax-layer layer6">
+				<img alt="Czarna dziura" class="image-main" src="assets/czarnadziura.jpg" />
+			</div>
+		</div>
+	</section>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml">	<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main-section&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;main-section&quot;</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;parallax-layer layer5&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tekst&quot;</span>&gt;</span>
+				Supernova to ogromne i gwałtowne zjawisko astronomiczne, które
+				następuje w wyniku gwałtownej eksplozji gwiazdy. Podczas supernowej
+				dochodzi do wyzwolenia ogromnych ilości energii, które sprawiają, że
+				gwiazda staje się na krótki okres jasniejsza niż cała galaktyka, w
+				której się znajduje. Proces ten może trwać kilka dni lub nawet
+				tygodni, podczas których supernova emituje ogromne ilości światła i
+				innych promieniowań. Supernowe są kluczowym elementem w kosmicznym
+				krajobrazie, ponieważ wytwarzają i rozprzestrzeniają liczne
+				pierwiastki, które są niezbędne do formowania nowych gwiazd i planet.
+			<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;parallax-layer layer6&quot;</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;super nowa&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-main&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/supernowa.jpg&quot;</span> /&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;parallax-layer layer5&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;parallax-layer layer6&quot;</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;mgławica ślimaka&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-main&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/Mglawica_Slimak.jpg&quot;</span> /&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tekst&quot;</span>&gt;</span>
+				Mgławica Ślimaka, znana również jako M1 lub NGC 1952, to jedna z
+				najbardziej znanych i obserwowanych mgławic planetarnych. Została
+				odkryta przez francuskiego astronoma Charles&#x27;a Messiera w 1771 roku.
+				Jej nazwa pochodzi od charakterystycznego spiralnego wzoru, który
+				przypomina skręconą muszlę ślimaka. Mgławica Ślimaka znajduje się w
+				konstelacji Byka i jest pozostałością po eksplozji gwiazdy, która
+				miała miejsce około 6 000 lat temu. Dziś stanowi fascynujący obiekt
+				badawczy, pozwalając naukowcom zgłębiać tajemnice ewolucji gwiazd i
+				kosmicznych zjawisk.
+			<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;parallax-layer layer5&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tekst&quot;</span>&gt;</span>
+				Czarne dziury to tajemnicze obiekty astronomiczne, których grawitacja
+				jest na tyle silna, że nawet światło nie jest w stanie uciec z ich
+				obszaru, dlatego są one nazywane &quot;czarnymi&quot;. Wewnętrzna struktura
+				czarnej dziury skrywa punkt o nieskończenie skupionej masie, zwany
+				singularnością, otoczoną horyzontem zdarzeń, czyli granicą, za którą
+				nie ma już powrotu. Choć są fascynującym obiektem badawczym, ich
+				natura nadal stanowi głęboką zagadkę dla astronomów.
+			<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;parallax-layer layer6&quot;</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Czarna dziura&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-main&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/czarnadziura.jpg&quot;</span> /&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>style.css</code>, line 760
+        </div>
+
+    </section>
+    <section id="kssref-1-4" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-1-4">
+            <span class="kss-title__ref">
+              1.4
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Układ Słoneczny
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-1-4" data-kss-fullscreen="kssref-1-4">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-1-4.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-1-4" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-1-4" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            <section id="ukladSloneczny">
+<div style="width: 100%; text-align: center">
+<h1 style="color: #fff">Układ Słoneczny</h1>
+</div>
+<div class="ukladSloneczny">
+<div class="ukladSloneczny1">
+<a href="neptun.html" style="display: flex;justify-content: center;align-items: center;width: 10vw;">
+<img alt="Neptun" class="image-uklad-planetyM" src="assets/neptun/neptun.webp" style="height: 100%; width: 100%" />
+</a>
+</div>
+<div class="ukladSloneczny2">
+<a href="mars.html" style="display: flex;justify-content: center;align-items: center;width: 20vw;">
+<img alt="Mars" class="image-uklad-planetyD" src="assets/mars/mars.webp" style="height: 100%; width: 100%" />
+</a>
+<a href="wenus.html" style="display: flex;justify-content: center;align-items: center;width: 20vw;">
+<img alt="Wenus" class="image-uklad-planetyD" src="assets/wenus/wenus.png"style="height: 100%; width: 100%" />
+</a>
+</div>
+<div class="ukladSloneczny3">
+<a href="jowisz.html" style="display: flex;justify-content: center;align-items: center;width: 30vw;">
+<img alt="Jowisz" class="image-uklad-planetyD" src="assets/jowisz/jowisz.webp" style="height: 100%; width: 100%" />
+</a>
+<a href="slonce.html" style="display: flex;justify-content: center;align-items: center;width: 30vw;">
+<img alt="Słońce" class="image-uklad" src="assets/slonce/slonce_1.png" style="height: 100%; width: 100%" />
+</a>
+<a href="saturn.html" style="display: flex;justify-content: center;align-items: center;width: 30vw;">
+<img alt="Saturn" class="image-uklad-planetyD" src="assets/saturn/saturn.webp" style="height: 100%; width: 100%" />
+</a>
+</div>
+<div class="ukladSloneczny4">
+<a href="ziemia.html" style="display: flex;justify-content: center;align-items: center;width: 30vw;">
+<img alt="Ziemia" class="image-uklad-planetyD" src="assets/ziemia/ziemiaAI_preview_rev_1.png" style="height: 100%; width: 100%" />
+</a>
+<a href="merkury.html" style="display: flex;justify-content: center;align-items: center;width: 10vw;">
+<img alt="Merkurya" class="image-uklad-planetyMM" src="assets/merkury/merkury.png" style="height: 100%; width: 100%" />
+</a>
+</div>
+<div class="ukladSloneczny5">
+<a href="uran.html" style="display: flex;justify-content: center;align-items: center;width: 10vw;">
+<img alt="Uran" class="image-uklad-planetyM" src="assets/uran/uran.webp" style="height: 100%; width: 100%" />
+</a>
+</div>
+</div>
+</section>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;ukladSloneczny&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 100%; text-align: center&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: #fff&quot;</span>&gt;</span>Układ Słoneczny<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ukladSloneczny&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ukladSloneczny1&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;neptun.html&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: flex;justify-content: center;align-items: center;width: 10vw;&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Neptun&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-uklad-planetyM&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/neptun/neptun.webp&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100%; width: 100%&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ukladSloneczny2&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mars.html&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: flex;justify-content: center;align-items: center;width: 20vw;&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Mars&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-uklad-planetyD&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/mars/mars.webp&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100%; width: 100%&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;wenus.html&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: flex;justify-content: center;align-items: center;width: 20vw;&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Wenus&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-uklad-planetyD&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/wenus/wenus.png&quot;</span><span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100%; width: 100%&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ukladSloneczny3&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;jowisz.html&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: flex;justify-content: center;align-items: center;width: 30vw;&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Jowisz&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-uklad-planetyD&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/jowisz/jowisz.webp&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100%; width: 100%&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;slonce.html&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: flex;justify-content: center;align-items: center;width: 30vw;&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Słońce&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-uklad&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/slonce/slonce_1.png&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100%; width: 100%&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;saturn.html&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: flex;justify-content: center;align-items: center;width: 30vw;&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Saturn&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-uklad-planetyD&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/saturn/saturn.webp&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100%; width: 100%&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ukladSloneczny4&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;ziemia.html&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: flex;justify-content: center;align-items: center;width: 30vw;&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Ziemia&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-uklad-planetyD&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/ziemia/ziemiaAI_preview_rev_1.png&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100%; width: 100%&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;merkury.html&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: flex;justify-content: center;align-items: center;width: 10vw;&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Merkurya&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-uklad-planetyMM&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/merkury/merkury.png&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100%; width: 100%&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ukladSloneczny5&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;uran.html&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: flex;justify-content: center;align-items: center;width: 10vw;&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Uran&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-uklad-planetyM&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/uran/uran.webp&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height: 100%; width: 100%&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>style.css</code>, line 816
+        </div>
+
+    </section>
+    <section id="kssref-1-5" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-1-5">
+            <span class="kss-title__ref">
+              1.5
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Edukacyjne Gwiazdy
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-1-5" data-kss-fullscreen="kssref-1-5">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-1-5.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-1-5" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-1-5" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+            	<section id="GwiazdyEdukacj">
+		<div style="text-align: center; color: #fff; margin: 5vh">
+			<h1>Edukacyjne Gwiazdy</h1>
+		</div>
+		<div id="ukladPerson">
+			<div id="conteinerPerson">
+				<div class="image-person">
+					<img alt="Stephen Hawking" src="assets/Stephen_Hawking.jpg" />
+				</div>
+				<article class="tekstPerson">
+					<h2>Stephen Hawking</h2>
+					<br />
+					Stephen Hawking (1942-2018) był wybitnym brytyjskim fizykiem
+					teoretycznym, kosmologiem i autorem książek popularnonaukowych. Mimo
+					że cierpiał na stwardnienie zanikowe boczne, co ograniczało go
+					fizycznie, jego umysł był nadzwyczaj ostry. Jest znany głównie z
+					opracowania teorii czarnych dziur oraz zaawansowanych koncepcji
+					dotyczących kosmologii i czasoprzestrzeni. Jego książka "Krótka
+					historia czasu" stała się bestsellerem i przyczyniła się do
+					rozpowszechnienia wiedzy o zagadnieniach związanych z kosmologią
+					wśród szerokiej publiczności.
+				</article>
+			</div>
+			<div id="conteinerPerson">
+				<div class="image-person">
+					<img alt="Mikołaj Kopernik" src="assets/kopernik.jpg" />
+				</div>
+				<article class="tekstPerson">
+					<h2>Mikołaj Kopernik</h2>
+					<br />
+					Mikołaj Kopernik (1473-1543) był polskim astronomem, matematykiem i
+					duchownym. Jego najważniejszym osiągnięciem było sformułowanie
+					teorii heliocentrycznej, która zakładała, że to Ziemia obraca się
+					wokół Słońca, a nie odwrotnie, jak głoszono w ówczesnym
+					geocentrycznym modelu Ptolemeusza. To przełomowe odkrycie dało
+					początek nowej epoce w rozwoju astronomii i nauki.
+				</article>
+			</div>
+			<div id="conteinerPerson">
+				<div class="image-person">
+					<img alt="Edwin Hubble" src="assets/hubble.jpeg" />
+				</div>
+				<article class="tekstPerson">
+					<h2>Edwin Hubble</h2>
+					<br />
+					Edwin Hubble był wybitnym amerykańskim astronomem, znakomitym
+					obserwatorem i teoretykiem. Jego prace nad odległymi galaktykami
+					doprowadziły do odkrycia, że Wszechświat się rozszerza, co stało się
+					kluczowym elementem kosmologii. Teleskop Hubble'a, nazwany na jego
+					cześć, jest jednym z najważniejszych narzędzi w badaniach
+					kosmicznych i dostarcza niezwykłych obrazów i danych o naszym
+					wszechświecie.
+				</article>
+			</div>
+		</div>
+	</section>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml">	<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;GwiazdyEdukacj&quot;</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align: center; color: #fff; margin: 5vh&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Edukacyjne Gwiazdy<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;ukladPerson&quot;</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;conteinerPerson&quot;</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-person&quot;</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Stephen Hawking&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/Stephen_Hawking.jpg&quot;</span> /&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tekstPerson&quot;</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Stephen Hawking<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+					Stephen Hawking (1942-2018) był wybitnym brytyjskim fizykiem
+					teoretycznym, kosmologiem i autorem książek popularnonaukowych. Mimo
+					że cierpiał na stwardnienie zanikowe boczne, co ograniczało go
+					fizycznie, jego umysł był nadzwyczaj ostry. Jest znany głównie z
+					opracowania teorii czarnych dziur oraz zaawansowanych koncepcji
+					dotyczących kosmologii i czasoprzestrzeni. Jego książka &quot;Krótka
+					historia czasu&quot; stała się bestsellerem i przyczyniła się do
+					rozpowszechnienia wiedzy o zagadnieniach związanych z kosmologią
+					wśród szerokiej publiczności.
+				<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;conteinerPerson&quot;</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-person&quot;</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Mikołaj Kopernik&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/kopernik.jpg&quot;</span> /&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tekstPerson&quot;</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Mikołaj Kopernik<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+					Mikołaj Kopernik (1473-1543) był polskim astronomem, matematykiem i
+					duchownym. Jego najważniejszym osiągnięciem było sformułowanie
+					teorii heliocentrycznej, która zakładała, że to Ziemia obraca się
+					wokół Słońca, a nie odwrotnie, jak głoszono w ówczesnym
+					geocentrycznym modelu Ptolemeusza. To przełomowe odkrycie dało
+					początek nowej epoce w rozwoju astronomii i nauki.
+				<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;conteinerPerson&quot;</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-person&quot;</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Edwin Hubble&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/hubble.jpeg&quot;</span> /&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tekstPerson&quot;</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Edwin Hubble<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+					Edwin Hubble był wybitnym amerykańskim astronomem, znakomitym
+					obserwatorem i teoretykiem. Jego prace nad odległymi galaktykami
+					doprowadziły do odkrycia, że Wszechświat się rozszerza, co stało się
+					kluczowym elementem kosmologii. Teleskop Hubble&#x27;a, nazwany na jego
+					cześć, jest jednym z najważniejszych narzędzi w badaniach
+					kosmicznych i dostarcza niezwykłych obrazów i danych o naszym
+					wszechświecie.
+				<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>style.css</code>, line 868
+        </div>
+
+    </section>
+</article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

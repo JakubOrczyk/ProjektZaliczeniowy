@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Układ Słoneczny</title>
-</head>
-<body>
-    <header style="padding-top: 8vh">
-        <nav class="horizontal-menu">
-            <div class="logo">
-                <a href="index.html"
-                    ><img alt="Ziemia" class="logo1" src="assets/logo.png"
-                /></a>
-            </div>
-            <input type="checkbox" id="toggle" />
-            <label for="toggle">
-                <div class="hamburger"></div>
-            </label>
-            <menu id="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="kosmiczneCuda.html">Kosmiczne cuda</a></li>
-                    <li><a href="znani.html">Znani</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </menu>
-            <div />
-        </nav>
-    </header>
-    <div class="container">
-        <h2>Skontaktuj się z nami</h2>
-        <form id="contactForm" action="#" method="get">
-            <label class="labelContent" for="name">Imię i nazwisko:</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label class="labelContent" for="email">Email:</label>
-            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
-    
-            <label class="labelContent" for="message">Wiadomość:</label>
-            <textarea id="message" name="message" required></textarea>
-    
-            <input type="submit" value="Wyślij">
-        </form>
-    </div>
-    <footer id="footer" style="position: fixed;">
-        <div class="containerFooter">
-            <p>&copy; 2023 Cosmos. Wszelkie prawa zastrzeżone.</p>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="#">O nas</a></li>
-                </ul>
-            </nav>
-            <address>
-                Adres: ul. Rejtana 123, 35-025 Rzeszów<br />
-                Telefon: (123) 456-7890<br />
-                E-mail: cosmos@info.com
-            </address>
-        </div>
-    </footer>
-    <script >
-    /**
-        * Obsługuje zdarzenie wysłania formularza kontaktowego.
-        * @param {Event} event - Obiekt zdarzenia wysłania formularza.
-        */
-       document.getElementById('contactForm').addEventListener('submit', function(event) {
-           event.preventDefault();
-           alert('Formularz wysłany');
-           this.reset();
-       });
-       </script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Układ Słoneczny</title>
+	</head>
+	<body>
+		<header style="padding-top: 8vh">
+			<nav class="horizontal-menu">
+				<div class="logo">
+					<a href="index.html"
+						><img alt="Ziemia" class="logo1" src="assets/logo.png"
+					/></a>
+				</div>
+				<input type="checkbox" id="toggle" />
+				<label for="toggle">
+					<div class="hamburger"></div>
+				</label>
+				<menu id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="kosmiczneCuda.html">Kosmiczne cuda</a></li>
+						<li><a href="znani.html">Znani</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</menu>
+				<div />
+			</nav>
+		</header>
+		<div class="container">
+			<h2>Skontaktuj się z nami</h2>
+			<form id="contactForm" action="#" method="get">
+				<label class="labelContent" for="name">Imię i nazwisko:</label>
+				<input type="text" id="name" name="name" required />
+
+				<label class="labelContent" for="email">Email:</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					required
+					pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+				/>
+
+				<label class="labelContent" for="message">Wiadomość:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<input type="submit" value="Wyślij" />
+			</form>
+		</div>
+		<footer id="footer" style="position: fixed">
+			<div class="containerFooter">
+				<p>&copy; 2023 Cosmos. Wszelkie prawa zastrzeżone.</p>
+				<nav>
+					<ul>
+						<li><a href="index.html">Strona główna</a></li>
+						<li><a href="#">O nas</a></li>
+					</ul>
+				</nav>
+				<address>
+					Adres: ul. Rejtana 123, 35-025 Rzeszów<br />
+					Telefon: (123) 456-7890<br />
+					E-mail: cosmos@info.com
+				</address>
+			</div>
+		</footer>
+		<script>
+			/**
+			 * Obsługuje zdarzenie wysłania formularza kontaktowego.
+			 * @param {Event} event - Obiekt zdarzenia wysłania formularza.
+			 */
+			document
+				.getElementById("contactForm")
+				.addEventListener("submit", function (event) {
+					event.preventDefault();
+					alert("Formularz wysłany");
+					this.reset();
+				});
+		</script>
+	</body>
 </html>

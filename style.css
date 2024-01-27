@@ -1,17 +1,57 @@
+/* Root variables
+Definicje globalnych zmiennych CSS, które określają kolorystykę strony, w tym kolory tła, tekstów i akcentów.
+*/
+
+/* Body Styles
+Podstawowe style dla całego dokumentu, ustawiające m.in. kolor tła, rodzinę czcionek, wyrównanie elementów i układ flex.
+*/
+
+/* Header Styles
+Style dla nagłówka strony, określające jego pozycjonowanie, rozmiar i wyrównanie.
+*/
+
+/* Header Text
+Style dla tekstu w nagłówku, w tym rozmiar fontu, kolor, margines i efekt przejścia.
+*/
+
+/* Navigation Bar
+Style dla paska nawigacji, w tym jego pozycjonowanie, układ, kolor tła i style dla logo oraz elementów nawigacyjnych.
+*/
+
+/* Footer Styles
+Style dla stopki, określające tło, kolor tekstu, linki i ich interakcje oraz style dla obrazków.
+*/
+
+/* Media Queries for small screens
+Zestaw reguł dla responsywności strony na małych ekranach, w tym zmiany w stylach nawigacji, nagłówka i pozycjonowania elementów.
+*/
+/* 
+	Resetowanie marginesów, paddingów i box-sizing na wszystkich elementach 
+	Styleguide 1.0.0
+*/
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+/*
+   Ogólne style dla całego dokumentu
+   No styleguide reference.
+*/
 body {
 	width: 100%;
 	margin: 0;
 	background-color: #000;
-	
 }
+/*
+   Ukrywanie paska przewijania w przeglądarkach opartych na silniku WebKit
+*/
 ::-webkit-scrollbar {
-    display: none; /* Dla przeglądarek opartych na Chromium, np. Google Chrome */
+	display: none;
 }
+/*
+   Styl dla paska nawigacyjnego
+*/
 .horizontal-menu {
 	z-index: 1;
 	position: fixed;
@@ -24,23 +64,36 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
-.horizontal-menu menu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
+/*
+ * Horizontal Menu
+ */
 
+/* Stylizacja paska menu */
+.horizontal-menu menu ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+/*
+   Stylowanie elementów listy nawigacyjnej
+*/
 .horizontal-menu li {
 	margin: 0 10px;
 }
-
+/*
+   Stylowanie odnośników w pasku nawigacyjnym
+*/
 .horizontal-menu a {
 	color: #fff;
 	text-decoration: none;
 	position: relative;
 }
-
+/*
+Efekt podkreślenia przy najechaniu na odnośnik w pasku nawigacyjnym
+Styleguide 2.0.0
+   
+*/
 .horizontal-menu a::before {
 	content: "";
 	position: absolute;
@@ -56,11 +109,13 @@ body {
 .horizontal-menu a:hover::before {
 	width: 100%;
 }
-
-  nav menu ul li {
-    list-style: none;
-  }
-
+/*
+   Ukrywanie elementów listy nawigacyjnej
+*/
+nav menu ul li {
+	list-style: none;
+}
+/* Stylizacja hamburgera dla menu responsywnego */
 .hamburger {
 	width: 40px;
 	height: 35px;
@@ -70,6 +125,7 @@ body {
 	position: relative;
 	display: none;
 }
+/* Dodanie pasków dla hamburgera */
 .hamburger::before,
 .hamburger::after {
 	content: "";
@@ -83,11 +139,16 @@ body {
 .hamburger::after {
 	transform: translateY(25px);
 }
+/*
+   Styl checkboxa toggle ukrycie go
+*/
 #toggle {
 	position: absolute;
 	right: 9999px;
 }
-
+/*
+   Style dla warstw paralaksowych
+*/
 .parallax-layer {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -101,7 +162,6 @@ body {
 }
 
 .layer2 {
-	
 	position: absolute;
 	top: 55vh;
 	left: 40vw;
@@ -110,7 +170,6 @@ body {
 	display: flex;
 	justify-content: center;
 }
-
 
 .layer3 {
 	position: absolute;
@@ -121,7 +180,6 @@ body {
 	display: flex;
 	justify-content: center;
 }
-
 
 .layer4 {
 	position: absolute;
@@ -149,10 +207,12 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+/* Stylizacja obrazu głównego */
 .image-main {
 	width: 90%;
 	height: 90%;
 }
+/* Stylizacja tekstu */
 .tekst {
 	display: flex;
 	justify-content: center;
@@ -162,13 +222,20 @@ body {
 	color: #fff;
 	text-align: center;
 }
+/*
+ * Logo
+ */
 
-
+/* Stylizacja logo */
 .logo1 {
 	width: 150px;
 	height: 50px;
 }
+/*
+ * Main Section
+ */
 
+/* Stylizacja głównej sekcji */
 .main-section {
 	display: flex;
 	flex: 1;
@@ -178,7 +245,11 @@ body {
 .logo a::before {
 	background-color: #111111;
 }
+/*
+ * Header Text
+ */
 
+/* Stylizacja nagłówka tekstu */
 #tekst-header {
 	color: #fff;
 	width: 50%;
@@ -186,7 +257,6 @@ body {
 	position: absolute;
 	left: 20px;
 	bottom: 0;
-	
 }
 
 aside {
@@ -199,7 +269,7 @@ aside {
 	flex-direction: column;
 	justify-content: space-around;
 }
-
+/* Stylizacja poszczególnych ekranów w bocznym panelu */
 #screen1 {
 	width: 100%;
 	height: 50px;
@@ -221,17 +291,18 @@ aside {
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
+/*
+ * Solar System Layout
+ */
 
+/* Stylizacja układu słonecznego */
 #ukladSloneczny {
-	
 	width: 100%;
-	
 }
 .ukladSloneczny {
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	
 }
 
 .ukladSloneczny1 {
@@ -242,14 +313,14 @@ aside {
 	height: 20vh;
 	animation: obrot 100s linear infinite;
 }
-
+/* Animacja obrotu */
 @keyframes obrot {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .ukladSloneczny2 {
@@ -258,7 +329,6 @@ aside {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-end;
-	
 }
 .ukladSloneczny3 {
 	height: 30vh;
@@ -281,29 +351,31 @@ aside {
 	justify-content: center;
 	align-items: center;
 }
-
+/* Stylizacja obrazu układu słonecznego */
 .image-uklad {
 	width: 20%;
-    transform: scale(0.8);
+	transform: scale(0.8);
 	transition: transform 1s;
 }
+/* Stylizacja obrazu układu słonecznego dużych planet */
 .image-uklad-planetyD {
 	width: 20%;
-    transform: scale(0.4);
+	transform: scale(0.4);
 	transition: transform 1s;
 }
+/* Stylizacja obrazu układu słonecznego małych planet */
 .image-uklad-planetyM {
 	width: 20%;
-    transform: scale(0.2);
+	transform: scale(0.2);
 	transition: transform 1s;
 }
-
+/* Stylizacja obrazu układu słonecznego bardzo małych planet */
 .image-uklad-planetyMM {
 	width: 20%;
-    transform: scale(0.1);
+	transform: scale(0.1);
 	transition: transform 1s;
 }
-
+/* Efekt powiększenia obrazu po najechaniu myszką */
 .image-uklad:hover {
 	transform: scale(1);
 }
@@ -316,94 +388,104 @@ aside {
 .image-uklad-planetyD:hover {
 	transform: scale(0.6);
 }
+/*
+ * Person Section
+ */
 
+/* Stylizacja sekcji z osobą */
 .image-person {
-    height: 50vh;
+	height: 50vh;
 	width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .tekstPerson {
-	
 	text-align: center;
 	color: #fff;
 	width: 100%;
-    height: 50vh;
+	height: 50vh;
 }
 
 #ukladPerson {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 #conteinerPerson {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+/*
+ * Footer
+ */
 
+/* Stylizacja stopki */
 footer {
 	position: relative;
 	bottom: 0;
 	color: #fff;
 	width: 100%;
 	background-color: #111111;
-    border-top: 1px solid #ccc;
-    padding: 20px 0;
-    text-align: center;
+	border-top: 1px solid #ccc;
+	padding: 20px 0;
+	text-align: center;
 }
 
 .containerFooter {
-    
-    margin: 0 auto;
-    padding: 20px;
+	margin: 0 auto;
+	padding: 20px;
 }
 
-
 footer ul {
-    list-style-type: none;
-    padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 
 footer li {
-    display: inline-block;
-    margin: 0 10px;
+	display: inline-block;
+	margin: 0 10px;
 }
 
 footer a {
-    text-decoration: none;
-    color: #909090;
+	text-decoration: none;
+	color: #909090;
 }
 
 footer a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 address {
-    font-style: normal; 
+	font-style: normal;
 }
+/*
+ * Tables
+ */
 
-label{
+/* Stylizacja tabel */
+label {
 	display: none;
 }
 
-th{
+th {
 	color: #000;
 }
-td{
+td {
 	color: #fff;
 }
 table {
 	width: 100%;
 	border-collapse: collapse;
 }
-th, td {
+th,
+td {
 	padding: 8px;
 	text-align: left;
 	border-bottom: 1px solid #ddd;
@@ -411,7 +493,11 @@ th, td {
 th {
 	background-color: #f2f2f2;
 }
+/*
+ * Planet Info
+ */
 
+/* Stylizacja informacji o planetach */
 .planet-info {
 	margin-bottom: 20px;
 	display: flex;
@@ -419,9 +505,9 @@ th {
 	justify-content: center;
 	align-items: center;
 }
-.teksPlanet{
+.teksPlanet {
 	width: 50vw;
-padding: auto;
+	padding: auto;
 }
 .table-info {
 	width: 50vw;
@@ -452,15 +538,11 @@ padding: auto;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-
 }
 
-
-
-h2{
+h2 {
 	color: #fff;
 }
-
 
 .container {
 	max-width: 600px;
@@ -500,12 +582,14 @@ input[type="submit"]:hover {
 	margin-bottom: 5px;
 	color: #333;
 }
-
+/*
+ * Media Queries
+ */
 @media (max-width: 800px) {
-
 	label {
 		display: block;
 	}
+	/* responsywne style dla horizontal menu */
 	.horizontal-menu {
 		height: auto;
 		justify-content: flex-start;
@@ -548,25 +632,24 @@ input[type="submit"]:hover {
 		display: block;
 		max-height: 200px;
 	}
-	
 
-	
 	#GwiazdyEdukacj {
 		display: flex;
 		flex-direction: column;
 	}
+	/* Responsywne style dla układu Osób */
 	#ukladPerson {
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	#conteinerPerson {
 		width: 100%;
 	}
-	.logo{
+	.logo {
 		display: none;
 	}
-
+/* responsywne style dla footer */
 	footer {
 		position: relative;
 		bottom: 0;
@@ -577,42 +660,38 @@ input[type="submit"]:hover {
 		padding: 20px 0;
 	}
 
-    .containerFooter {
-        padding: 10px; /* zmniejszenie odstępów */
-    }
+	.containerFooter {
+		padding: 10px; 
+	}
 
-    footer ul {
-        margin-top: 10px; /* zmniejszenie odstępów */
-    }
+	footer ul {
+		margin-top: 10px; 
+	}
 	.layer5 {
 		flex-direction: column;
 	}
 
 	.ukladSloneczny {
 		height: 100vh;
-		
 	}
 	aside {
 		right: 0;
 		display: none;
 	}
 	.tekstPerson {
-	
 		text-align: center;
 		color: #fff;
 		width: 100%;
 	}
-	
+
 	.tekst {
 		width: 100%;
 	}
 
 	.image-main {
 		width: 100%;
-
 	}
 	.layer5 {
-
 		width: 100%;
 	}
 	.layer6 {
@@ -620,7 +699,6 @@ input[type="submit"]:hover {
 	}
 
 	.layer2 {
-	
 		position: absolute;
 		top: 35vh;
 		left: 20vw;
@@ -638,8 +716,7 @@ input[type="submit"]:hover {
 		display: flex;
 		justify-content: center;
 	}
-	
-	
+
 	.layer4 {
 		position: absolute;
 		top: 45vh;
@@ -655,7 +732,6 @@ input[type="submit"]:hover {
 		position: absolute;
 		left: 20px;
 		bottom: 0;
-		
 	}
 	.contentsInfo {
 		justify-content: center;
@@ -675,16 +751,14 @@ input[type="submit"]:hover {
 	.planet-info {
 		flex-direction: column;
 	}
-	.teksPlanet{
+	.teksPlanet {
 		width: 90vw;
-	padding: auto;
+		padding: auto;
 	}
 	.planet-description {
 		width: 90vw;
 	}
-	.imgKosmiczne{
+	.imgKosmiczne {
 		max-width: 90vw;
 	}
 }
-
-
